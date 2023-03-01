@@ -5,7 +5,7 @@ highlighter:      rouge
 # Setup
 title:            coldyoung
 tagline:          'A Jekyll theme'
-description:      'Robotics, Master's student at KAIST'
+description:      'Robotics Master degree student at KAIST'
 url:              https://cold-young.github.io
 baseurl:          ''
                   # the optional subpath of your site, e.g. "/blog"
