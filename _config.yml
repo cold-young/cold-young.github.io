@@ -3,9 +3,9 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Coldyoung
+title:            coldyoung
 tagline:          'A Jekyll theme'
-description:      'Master degree student in KAIST'
+description:      'Robotics, Master's student at KAIST'
 url:              https://cold-young.github.io
 baseurl:          ''
                   # the optional subpath of your site, e.g. "/blog"
