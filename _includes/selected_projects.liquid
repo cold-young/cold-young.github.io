@@ -1,0 +1,43 @@
+<div class="projects-section">
+  {% for project in site.projects %}
+    {% if project.category == "work" and project.importance >= 0 %}
+    <ul class="list-group list-group-flush mb-4">
+      <li class="list-group-item">
+        <div class="row no-gutters">
+          <!-- Project Image -->
+          {% if project.img %}
+            <div class="col-xs-12 col-md-4 text-center">
+              <img src="{{ project.img | relative_url }}" class="img-fluid" style="max-width: 100%; height: auto; object-fit: cover;">
+            </div>
+          {% endif %}
+
+          <!-- Project Details -->
+          <div class="col-xs-12 col-md-8 mt-2 mt-md-0">
+            <div class="p-3">
+              <!-- Project Title -->
+              <h5 class="font-weight-bold ml-1 ml-md-4">
+                <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+              </h5>
+              
+              <!-- Related Publications -->
+              {% if project.related_publications %}
+                <p class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ project.related_publications }}</p>
+              {% endif %}
+
+              <!-- Project Description -->
+              <p class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ project.description }}</p>
+
+              <!-- Additional Links (e.g., GitHub) -->
+              {% if project.github %}
+                <p class="ml-1 ml-md-4">
+                  <a href="{{ project.github }}" class="btn btn-sm z-depth-1" role="button">Code</a>
+                </p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    {% endif %}
+  {% endfor %}
+</div>
