@@ -47,9 +47,7 @@ category: work
 ## Publication info
 {: .no_toc}
 ---
-<div class="publications">
-{% bibliography -f papers -q @*[title=Video Prediction Models as Rewards for Reinforcement Learning]* --max 0 %}
-</div>
+
 
 <br/>
 
@@ -309,7 +307,3 @@ This work was supported in part by an NSF Fellowship, NSF NRI #2024675, ONR MURI
 ## How to cite
 {: .no_toc}
 ---
-
-<div class="publications">
-{% bibliography -f papers_new_pref -q @*[title=Video Prediction Models as Rewards for Reinforcement Learning]* --max 0 %}
-</div>
