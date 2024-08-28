@@ -6,7 +6,7 @@
     - name: Background
       value: Robotics, Mechanical Engineering
     - name: Research Interest
-      value: Manipulatioin and Aerial Robots    
+      value: Manipulation and Aerial Robots    
     - name: Languages
       value: Korean, English
     # - name: Tools/Libraries
@@ -18,59 +18,53 @@
     - title: M.S. in Robotics Program
       institution: Korea Advanced Institute of Science and Technology (KAIST), Daejeon, South Korea
       year: 2021-2024
-      description:
-        - Description 1.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: B.S. in Mechanical Engineering
-      institution: Pusan National University, Busan, South Korea
+    - title: B.E. in Mechanical Engineering (Summa Cum Laude)
+      institution: Pusan National University (PNU), Busan, South Korea
       year: 2016-2021
-      description:
-        - Description 1.
-        - Description 2.
-
 - title: Experience
   type: time_table
   contents:
-    - title: Internship at Supercomputing Application Center, KISTI
+    - title: Intern
       institution: <a href="https://www.kisti.re.kr/eng/">Korea Institute of Science and Technology Information (KISTI), Deajeon, South Korea</a>
-      year: Apr 2024-Jul 2024
+      department: Supercomputing Application Center
+      year: 2024.04-2024.07
       description:
-        - Test
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-    - title: Internship at NARA SPACE
+        -  Role
+    - title: Intern
       institution: <a href="https://www.naraspace.com/">NARA SPACE Technology Inc., Busan, South Korea</a>
-      year: Aug 2019
+      year: 2019.08-2019.08
       description:
-        - Test
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
+        - Role
+    - title: "Undergraduate Researcher: ExTENsys Lab @ PNU"
+      institution: Pusan National University, Busan, South Korea
+      year: 2019.09-2019.11
+      description:
+        - Role
 
 
 - title: Projects
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Samsung Electronics
+      institution: Samsung Electronics | RIRO Lab @ KAIST
+      year: 2022-2024
       description:
         - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+    - title: IITP
+      institution: IITP | RIRO Lab @ KAIST
+      year: 2022-2024
       description:
         - Description 1.
-        - Description 2.
+    - title: NARA SPACE
+      institution: NARA SPACE | CMP Lab @ PNU
+      year: 2019-2020
+      description:
+        - Description 1.
+    - title: KSME
+      institution: ExTENsys Lab @ PNU
+      year: 2019
+      description:
+        - Description 1.
 
 - title: Publications and Patents
   type: list
@@ -88,7 +82,7 @@
         - <b>Education Contribution Awar</b>, Keio University AI Consortium, Mar 2022.
     - title: Scholarships
       items:
-        - <b>Excellent Student Award</b>, The Robotics Society of Japan, Feb 2022.
+        - <b>Excellent Student Award</b>, The Robotics Society of Japan, Feb 2020.
 
 - title: Main Skills 
   type: map

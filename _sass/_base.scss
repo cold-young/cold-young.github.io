@@ -646,6 +646,7 @@ footer.sticky-bottom {
 
 // Extras
 .extras {
+  // transition: all 0s;
   a {
     text-decoration: none;
 
@@ -659,6 +660,8 @@ footer.sticky-bottom {
   .card {
     img {
       width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
     }
   }
 
@@ -680,9 +683,29 @@ footer.sticky-bottom {
     margin-bottom: 1rem;
     text-align: right;
   }
-}
 
-// Publications
+  .project-filter {
+    text-align: left;
+
+    .btn-filter {
+      padding: 0.25rem 0.75rem;
+      font-size: 0.875rem;
+      margin-right: 0.5rem;
+      border-radius: 0.5rem;
+      background-color: var(--global-theme-color);
+      color: var(--global-card-bg-color);
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-filter.active {
+      background-color: var(--global-card-bg-color);
+      color: var(--global-theme-color);
+      border: 1px solid var(--global-theme-color); 
+    }
+  }
+}
 
 .publications {
   margin-top: 2rem;

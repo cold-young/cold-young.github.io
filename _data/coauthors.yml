@@ -1,8 +1,16 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Kwon":
+  - firstname: ["Oh-Kyoung"]
+    url: https://scholar.google.com/citations?hl=ko&user=-ga5CpkAAAAJ&view_op=list_works&sortby=pubdate
 
+"Kang":
+  - firstname: ["Ji-Hoon"]
+    url: https://scholar.google.com/citations?hl=ko&user=6cXzug8AAAAJ&view_op=list_works&sortby=pubdate
+
+"Kim":
+  - firstname: ["Kyung Chun"]
+    url: https://scholar.google.co.kr/citations?user=eEMw3HIAAAAJ&hl=en   
+
+"Park":
+  - firstname: ["Daehyung"]
+    url: https://scholar.google.com/citations?hl=ko&user=5mWSk04AAAAJ

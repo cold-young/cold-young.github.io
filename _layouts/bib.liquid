@@ -5,8 +5,9 @@
     <div class="row no-gutters">
         {%- unless entry.for_project -%}
         <div class="col-sm-4 mx-auto my-auto">
-            <img src="{{entry.img_path}}" class="card-img" style="max-width: 100%;">
+            <img src="{{entry.img_path}}" class="card-img" style="max-width: 100%;"> 
         </div>
+        
         {%- endunless -%}
         {%- if entry.for_project -%}
         <div class="col-sm-12">
@@ -19,10 +20,60 @@
                     {% if entry.type == "thesis" -%}
                     {{reference}}
                     {%- else %}
-                    <!-- Title -->
 
+                    <!-- Badge -->
+                    {%- if entry.badge -%}
+                        {%- if site.data.venues[entry.badge] -%}
+                            {% assign venue_style = null %}
+                            {% if site.data.venues[entry.badge].color != blank %}
+                                {% assign venue_style = site.data.venues[entry.badge].color | prepend: 'style="background-color:' | append: '"' %}
+                            {%- endif -%}
+                            <badge
+                                class="badge rounded"
+                                {% if venue_style %}
+                                    {{ venue_style }}
+                                {% endif %}
+                            >
+                                {% if site.data.venues[entry.badge].url %}
+                                    {% if site.data.venues[entry.badge].icon %}
+                                        <a href="{{ site.data.venues[entry.badge].url }}">
+                                            <i class="{{ site.data.venues[entry.badge].icon }}"></i>
+                                            {{ entry.badge }}
+                                        </a>
+                                    {% else %}
+                                        <a href="{{ site.data.venues[entry.badge].url }}">
+                                            {{ entry.badge }}
+                                            </a>
+                                    {% endif %}
+                                {% else %}
+                                    <div>
+                                        {% if site.data.venues[entry.badge].icon %}
+                                            <i class="{{ site.data.venues[entry.badge].icon }}"></i> 
+                                            {{ entry.badge }}
+                                        {% else %}
+                                            {{ entry.badge }}
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+                            </badge>
+                        {% else %}
+                            <badge class="badge rounded">
+                                {% if entry.icon %}
+                                    <i class="{{ entry.icon }}"></i>
+                                {% endif %}
+                                {{ entry.badge }}
+                            </badge>
+                        {% endif %}
+                    {% endif %}
+
+
+                    <!-- Title -->
                     <div class="title">
-                        <a href="{{entry.url}}">{{entry.title}}</a>
+                        {% if entry.url %}
+                            <a href="{{ entry.url | relative_url }}">{{ entry.title }}</a>
+                        {% else %}
+                            {{ entry.title }}
+                        {% endif %}
                     </div>
 
                     <!-- Author -->
@@ -121,6 +172,52 @@
                         <b>{{entry.award}}</b>
                     </div>
                     {%- endif %}
+
+                    <!-- award_badge -->
+                    {%- if entry.award_badge -%}
+                        {%- if site.data.venues[entry.award_badge] -%}
+                            {% assign venue_style = null %}
+                            {% if site.data.venues[entry.award_badge].color != blank %}
+                                {% assign venue_style = site.data.venues[entry.award_badge].color | prepend: 'style="background-color:' | append: '"' %}
+                            {%- endif -%}
+                            <award_badge
+                                class="award_badge rounded"
+                                {% if venue_style %}
+                                    {{ venue_style }}
+                                {% endif %}
+                            >
+                                {% if site.data.venues[entry.award_badge].url %}
+                                    {% if site.data.venues[entry.award_badge].icon %}
+                                        <a href="{{ site.data.venues[entry.award_badge].url }}">
+                                            <i class="{{ site.data.venues[entry.award_badge].icon }}"></i>
+                                            {{ entry.award_badge }}
+                                        </a>
+                                    {% else %}
+                                        <a href="{{ site.data.venues[entry.award_badge].url }}">
+                                            {{ entry.award_badge }}
+                                            </a>
+                                    {% endif %}
+                                {% else %}
+                                    <div>
+                                        {% if site.data.venues[entry.award_badge].icon %}
+                                            <i class="{{ site.data.venues[entry.award_badge].icon }}"></i> 
+                                            {{ entry.award_badge }}
+                                        {% else %}
+                                            {{ entry.award_badge }}
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
+                            </award_badge>
+                        {% else %}
+                            <award_badge class="award_badge rounded">
+                                {% if entry.icon %}
+                                    <i class="{{ entry.icon }}"></i>
+                                {% endif %}
+                                {{ entry.award_badge }}
+                            </award_badge>
+                        {% endif %}
+                    {% endif %}
+
 
                     <!-- Links/Buttons -->
                     <div class="links">

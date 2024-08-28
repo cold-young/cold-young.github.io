@@ -2,7 +2,7 @@
   {% for project in site.projects %}
     {% if project.category == "work" and project.importance >= 0 %}
     <ul class="list-group list-group-flush mb-4">
-      <li class="list-group-item">
+      <li class="list-group-item project-card" style="background-color: var(--global-bg-color); color: var(--global-text-color); border-radius: 8px; transition: background-color 0.15s ease, color 0.15s ease;">
         <div class="row no-gutters">
           <!-- Project Image -->
           {% if project.img %}
@@ -16,7 +16,7 @@
             <div class="p-3">
               <!-- Project Title -->
               <h5 class="font-weight-bold ml-1 ml-md-4">
-                <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+                <a href="{{ project.url | relative_url }}" style="color: var(--global-theme-color);">{{ project.title }}</a>
               </h5>
               
               <!-- Related Publications -->
@@ -41,3 +41,15 @@
     {% endif %}
   {% endfor %}
 </div>
+
+<style>
+  /* Dark mode specific styles */
+  html[data-theme="dark"] .project-card {
+    background-color: var(--global-card-bg-color);
+    color: var(--global-text-color-light);
+  }
+
+  html[data-theme="dark"] .project-card a {
+    color: var(--global-text-color-light);
+  }
+</style>

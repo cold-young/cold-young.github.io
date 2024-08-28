@@ -1,9 +1,11 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
+"Thesis":
   color: "#009f36"
+  icon: "fa-solid fa-graduation-cap"
+
+"Conference":
+  color: "#2cb1da"
+
+# Award badge list
+"PNU CAPSTONE Poster Session, 3rd out of 90 teams":
+  color: "#2cb1da"
+  icon: "fa-solid fa-award"
